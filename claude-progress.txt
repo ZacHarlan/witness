@@ -617,3 +617,18 @@ TESTS  : Vitest 859 -> 870 (tests/unit/application/input.test.ts: pace, clamp, r
 NEXT   : Try the stick on a real phone (Safari iOS especially: pointer capture + touch-action on the zone) and
          decide whether the resting hint should fade out after the first few uses.
 BLOCKED: none.
+
+----------------------------------------------------------------------------------------------------------------
+2026-11-14 · Claude Code (claude-opus-5-5) · Move the repo to the personal ZacHarlan account
+DONE   : The repo now lives at https://github.com/ZacHarlan/witness (public, same description, delete branch on
+         merge). The transfer request never reached the owner and GitHub has no API to accept one, so main (all
+         history, one branch, no tags/issues/releases) was pushed to a new ZacHarlan/witness instead. Pages is
+         on (build from Actions) at https://zacharlan.github.io/witness/. Local remotes: origin = ZacHarlan/witness,
+         lee = the old Zac-Harlan-Lee-Enterprises/witness (left as is; its 31 merged PR pages live only there).
+         Repo-local git config: commits as Zac Harlan <zacharyharlan@gmail.com>; github.com credentials come
+         from `gh auth token -u ZacHarlan` (local credential helper), so pushes here use ZacHarlan whichever gh
+         account is active. Docs needed no edits (they use `<owner>.github.io`).
+TESTS  : No code changed; nothing run locally (Vitest stays at 870). CI on ZacHarlan/witness is the check.
+NEXT   : Confirm CI and "Deploy to GitHub Pages" pass on ZacHarlan/witness and the site loads, then decide what to
+         do with the old Lee repo (archive it, or replace its README with a pointer to ZacHarlan/witness).
+BLOCKED: none.
